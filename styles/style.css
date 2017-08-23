@@ -102,17 +102,23 @@ section.top-article{
   margin-bottom: 10%;
 }
 
+.link{
+  display:inline-block;
+  padding: 5% 13%;
+  width: 170%;
+  background-color: green;
+}
+
 /* ---- TOP NEWS SECTION STYLES --------------------------- */
 .sectionrow.grid{
   width: 90%;
   margin: 0 auto;
 }
 
-.link{
-  display:inline-block;
-  padding: 5% 13%;
-  width: 170%;
-  background-color: green;
+.pictureNews{
+  width: 50%;
+  height: auto;
+
 }
 
 /* ---- FOOTER SECTION STYLES ----------------------------- */
