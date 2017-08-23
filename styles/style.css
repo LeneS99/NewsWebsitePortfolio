@@ -121,4 +121,12 @@ section.top-article{
 
 }
 
+.description{
+  display: none;
+}
+
 /* ---- FOOTER SECTION STYLES ----------------------------- */
+.subscribe.col-4{
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+}
