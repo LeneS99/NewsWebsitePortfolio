@@ -11,7 +11,7 @@
   - FORMS
 
 ---------------------------
-Website Fonts: List fonts here for reference
+Website Fonts: 'Lato', sans-serif;
 Website Colours: List colour hex codes here for reference
 ----------------------------
 */
@@ -46,8 +46,8 @@ img{
 
 /* ---- UNIVERSAL STYLES ---------------------------------- */
 body{ /* font aussuchen und hier eintragen, link in html eintragen (head)*/
-  font-family:
-  color:
+  font-family: 'Lato', sans-serif;
+  color: black;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -60,6 +60,7 @@ p{
 
 a{
 text-decoration: none;
+color: black;
 }
 
 section{
@@ -68,8 +69,12 @@ section{
 }
 
 /* ---- HEADER SECTION STYLES ----------------------------- */
-.topline grid{
-  justify-content: space-between;
+nav a{
+  padding: 1vh 1vh;
+}
+
+nav a:hover{
+  border-bottom: 3px black solid;
 }
 
 
