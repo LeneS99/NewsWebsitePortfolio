@@ -1,4 +1,4 @@
-/* ------ INDEX --------------------
+/* ------ INDEX ------------------------------------------
   - CSS RESET
   - GENERAL HELPER CLASSES
   - UNIVERSAL STYLES
@@ -16,7 +16,7 @@ Website Colours: List colour hex codes here for reference
 ----------------------------
 */
 
-/* ----- CSS RESET ----- */
+/* ---- CSS RESET ---------------------------------------- */
 *{
   margin: 0;
   padding: 0;
@@ -28,3 +28,53 @@ img{
   max-width: 100%;
   height: auto;
 }
+
+/* ---- GENERAL HELPER CLASSES --------------------------- */
+.tall         { min-height:100vh; }
+.med-height   { min-height: 50vh; }
+.short        { min-height: 30vh; }
+
+.left         { text-align: left; }
+.centered     { text-align: center; }
+.right        { text-align: right; }
+
+.no-padding { padding: 0; }
+
+.white-bg    { background-color: rgb(245,245,245); }
+.darkgrey-bg     { background-color: rgb(60,60,60); }
+.feat-bg     { background-color: ; }
+
+/* ---- UNIVERSAL STYLES ---------------------------------- */
+body{ /* font aussuchen und hier eintragen, link in html eintragen (head)*/
+  font-family:
+  color:
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family:
+}
+
+p{
+
+}
+
+a{
+text-decoration: none;
+}
+
+section{
+  width: 100%;
+  margin: 0 auto; /*0 auto für mittig*/
+}
+
+/* ---- HEADER SECTION STYLES ----------------------------- */
+
+
+/* ---- MAIN ARTICLE SECTION STYLES ----------------------- */
+
+
+/* ---- TOP NEWS SECTION STYLES --------------------------- */
+
+
+
+/* ---- FOOTER SECTION STYLES ----------------------------- */
