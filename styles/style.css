@@ -21,7 +21,7 @@ Website Colours: List colour hex codes here for reference
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 img{
@@ -77,6 +77,18 @@ nav a:hover{
   border-bottom: 3px black solid;
 }
 
+/* ---- SUBSCRIBE SECTION STYLES -------------------------- */
+section.subscribe{
+  margin-top: 2%;
+}
+
+input.email-signup, button{
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  margin-bottom: 3%;
+  height: 5vh;
+}
 
 /* ---- MAIN ARTICLE SECTION STYLES ----------------------- */
 
