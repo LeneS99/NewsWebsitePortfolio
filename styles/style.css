@@ -41,7 +41,7 @@ img{
 .no-padding { padding: 0; }
 
 .white-bg    { background-color: rgb(245,245,245); }
-.darkgrey-bg     { background-color: rgb(60,60,60); }
+.darkgrey-bg { background-color: rgb(60,60,60); }
 .feat-bg     { background-color: ; }
 
 /* ---- UNIVERSAL STYLES ---------------------------------- */
@@ -68,6 +68,9 @@ section{
 }
 
 /* ---- HEADER SECTION STYLES ----------------------------- */
+.topline grid{
+  justify-content: space-between;
+}
 
 
 /* ---- MAIN ARTICLE SECTION STYLES ----------------------- */
