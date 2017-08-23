@@ -116,9 +116,22 @@ section.top-article{
 }
 
 .pictureNews{
-  width: 50%;
-  height: auto;
+  background-image: url('../images/default-placeholder.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 40vh;
+  width: auto;
+}
 
+.titlearticle{
+  display: inline-block;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 5%;
+  padding-left: 5%;
+  background-color: white;
+  margin-left: 25%;
+  margin-top: -10%;
 }
 
 .description{
