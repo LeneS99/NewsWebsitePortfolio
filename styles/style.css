@@ -92,17 +92,7 @@ input.email-signup, button{
 /* ---- MAIN ARTICLE SECTION STYLES ----------------------- */
 div.top-article{
   height: 30vw;
-  background-image: url('../images/default-placeholder.png');
-}
-
-.headline{
-  background-color: lightgrey;
-  border: 2px solid black;
-  width: 30%;
-  margin: 0 auto;
-  margin-top: 20%;
-  margin-bottom: -180px;
-  padding: 1%;
+  background-image: url('../images/placeholder-image4.jpg');
 }
 
 section.top-article{
@@ -111,8 +101,18 @@ section.top-article{
   margin-top: 3%;
   margin-bottom: 10%;
 }
+
 /* ---- TOP NEWS SECTION STYLES --------------------------- */
+.sectionrow.grid{
+  width: 90%;
+  margin: 0 auto;
+}
 
-
+.link{
+  display:inline-block;
+  padding: 5% 13%;
+  width: 170%;
+  background-color: green;
+}
 
 /* ---- FOOTER SECTION STYLES ----------------------------- */
