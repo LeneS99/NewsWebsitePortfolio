@@ -1,0 +1,30 @@
+/* ------ INDEX --------------------
+  - CSS RESET
+  - GENERAL HELPER CLASSES
+  - UNIVERSAL STYLES
+    - Layout
+    - Typography
+    - General Styles
+  - HEADER & FOOTER
+  - MODULAR ELEMENTS
+    - Element Name
+  - FORMS
+
+---------------------------
+Website Fonts: List fonts here for reference
+Website Colours: List colour hex codes here for reference
+----------------------------
+*/
+
+/* ----- CSS RESET ----- */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
