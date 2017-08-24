@@ -1,0 +1,165 @@
+/* ------ INDEX ------------------------------------------
+  - CSS RESET
+  - GENERAL HELPER CLASSES
+  - UNIVERSAL STYLES
+    - Layout
+    - Typography
+    - General Styles
+  - HEADER & FOOTER
+  - MODULAR ELEMENTS
+    - Element Name
+  - FORMS
+
+---------------------------
+Website Fonts: 'Lato', sans-serif;
+Website Colours: List colour hex codes here for reference
+----------------------------
+*/
+
+/* ---- CSS RESET ---------------------------------------- */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+/* ---- GENERAL HELPER CLASSES --------------------------- */
+.tall         { min-height:100vh; }
+.med-height   { min-height: 50vh; }
+.short        { min-height: 30vh; }
+
+.left         { text-align: left; }
+.centered     { text-align: center; }
+.right        { text-align: right; }
+
+.no-padding { padding: 0; }
+
+.white-bg    { background-color: rgb(245,245,245); }
+.darkgrey-bg { background-color: rgb(60,60,60); }
+.feat-bg     { background-color: ; }
+
+/* ---- UNIVERSAL STYLES ---------------------------------- */
+body{ /* font aussuchen und hier eintragen, link in html eintragen (head)*/
+  font-family: 'Lato', sans-serif;
+  color: black;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family:
+}
+
+p{
+
+}
+
+a{
+text-decoration: none;
+color: black;
+}
+
+section{
+  width: 100%;
+  margin: 0 auto; /*0 auto für mittig*/
+}
+
+/* ---- HEADER SECTION STYLES ----------------------------- */
+
+.navrow a{
+  padding: 1vh 1vh;
+}
+
+nav a:hover{
+  border-bottom: 3px black solid;
+}
+
+/* ---- SUBSCRIBE SECTION STYLES -------------------------- */
+section.subscribe{
+  margin-top: 2%;
+}
+
+input.email-signup, button{
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: 5vh;
+}
+
+/* ---- MAIN ARTICLE SECTION STYLES ----------------------- */
+div.top-article{
+  height: 30vw;
+  background-image: url('../images/placeholder-image4.jpg');
+}
+
+section.top-article{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 3%;
+  margin-bottom: 10%;
+}
+
+.link{
+  display:inline-block;
+  padding: 5% 13%;
+  width: 170%;
+}
+
+.linkdiv{
+  margin-bottom: -40px;
+  margin-right: 15%;
+}
+
+/* ---- TOP NEWS SECTION STYLES --------------------------- */
+.sectionrow.grid{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.pictureNews{
+  background-image: url('../images/default-placeholder.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 40vh;
+  width: auto;
+}
+
+.titlearticle{
+  display: inline-block;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 5%;
+  padding-left: 5%;
+  background-color: white;
+  margin-left: 25%;
+  margin-top: -10%;
+}
+
+.description{
+  margin-top: -70%;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  display: none;
+}
+
+.description h3{
+  margin-bottom: 5%;
+}
+
+.description p{
+  margin-bottom: 10%;
+}
+
+/* ---- FOOTER SECTION STYLES ----------------------------- */
+.footerrow.grid{
+  margin-top: 10%;
+}
+
+.subscribe.col-4{
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+}
