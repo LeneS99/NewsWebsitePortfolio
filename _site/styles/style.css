@@ -72,6 +72,8 @@ section{
 
 .navrow a{
   padding: 1vh 1vh;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 nav a:hover{
