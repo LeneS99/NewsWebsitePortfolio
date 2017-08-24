@@ -160,7 +160,7 @@ section.top-article{
   border-right: 3px solid black;
 }
 
-input.email-signup, button{
+.inputfooter, button{
   display: block;
   margin: 0 auto;
   width: 50%;
