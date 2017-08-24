@@ -1,4 +1,42 @@
-
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title></title> <!-- put title in here ----->
+    <script src="https://use.fontawesome.com/5911f91835.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.4.0/gridlex.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  </head>
+  <body>
+    <header id="home">
+      <div class="grid">
+        <div class="col-3">
+          <!-- date here -->
+        </div>
+        <div class="col-3">
+          <!-- language -->
+        </div>
+        <div class="col-3">
+          <!-- search bar -->
+        </div>
+        <div class="col-3 right icons">
+          <a href="https://www.instagram.com/lenescha/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/le_scha" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="navrow grid-bottom centered">
+        <div class="col-2">
+          <a href="#home"><img src="images/placeholder-image4.jpg" alt="logo"></a>
+        </div>
+        <div class="col-10">
+          <nav>
+            <a href="#home"><i class="fa fa-home" aria-hidden="true"></i></a>
+            <a>topics</a>
+            <a href="">countries</a>
+          </nav>
+        </div>
+      </div>
+    </header>
     <section class="subscribe">
       <form class="grid-middle" method="POST" action="http://formspree.io/lene_schargitz@outlook.de">
         <div class="col-6 centered">
@@ -12,11 +50,11 @@
         </div>
       </form>
     </section>
-    <section class="top-article grid-bottom">
+    <section class="top-article grid-center-bottom">
       <div class="top-article">
         <!-- insert background image for div -->
       </div>
-      <div>
+      <div class="linkdiv">
         <a class="link" href="#"><h1>title top news article</h1></a>
       </div>
     </section>
@@ -92,4 +130,44 @@
         </div>
       </div>
     </section>
-    
+    <footer>
+      <div class="footerrow grid">
+        <div class="footerNav col-4">
+          <h3>at a glance</h3>
+          <a href="#home">home</a>
+          <a href="#">europe</a>
+          <a href="#">topics</a>
+          <a href="#">politics</a>
+          <a href="#">economics</a>
+          <a href="#">sport</a>
+          <a href="#">culture</a>
+          <a href="#">countries</a>
+          <a href="#">poland</a> <!-- insert more countries here -->
+        </div>
+        <div class="subscribe col-4">
+          <form method="POST" action="http://formspree.io/lene_schargitz@outlook.de">
+            <div class="inputfooter centered">
+              <label for="name"> <h3>Subscribe</h3></label>
+              <input class="centered" type="name" name="name" placeholder="Your name">
+            </div>
+            <div class="inputfooter centered">
+              <input class="centered" type="email" name="email" placeholder="Your email">
+            </div>
+            <div class="button">
+              <button type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-4-middle">
+          <div>
+            <!-- search bar -->
+          </div>
+          <div class="footerlinks right">
+            <a href="https://www.instagram.com/lenescha/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/le_scha"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
