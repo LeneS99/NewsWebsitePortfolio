@@ -69,6 +69,7 @@ section{
 }
 
 /* ---- HEADER SECTION STYLES ----------------------------- */
+
 .navrow a{
   padding: 1vh 1vh;
 }
@@ -149,7 +150,6 @@ section.top-article{
   margin-bottom: 10%;
 }
 
-
 /* ---- FOOTER SECTION STYLES ----------------------------- */
 .footerrow.grid{
   margin-top: 10%;
@@ -158,11 +158,4 @@ section.top-article{
 .subscribe.col-4{
   border-left: 3px solid black;
   border-right: 3px solid black;
-}
-
-.inputfooter, button{
-  display: block;
-  margin: 0 auto;
-  width: 50%;
-  height: 5vh;
 }
