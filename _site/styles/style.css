@@ -95,7 +95,7 @@ input.email-signup, button{
 /* ---- MAIN ARTICLE SECTION STYLES ----------------------- */
 div.top-article{
   height: 30vw;
-  background-image: url('../images/placeholder-image4.jpg');
+  /*background-image: url('../images/placeholder-image4.jpg');*/
 }
 
 section.top-article{

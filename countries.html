@@ -1,0 +1,8 @@
+---
+layout: default
+---
+{% for country in site.countries %}
+  <a href="#">
+    {{ country.title }} - {{ country.date }}
+  </a>
+{% endfor %}
