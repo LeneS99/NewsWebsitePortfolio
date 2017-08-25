@@ -1,12 +1,5 @@
 ---
 layout: default
-topnews:
-  - link:
-  - title:
-latestnews:
-  - link:
-  - title:
-  - description:
 ---
 
     <section class="subscribe">
@@ -23,29 +16,25 @@ latestnews:
       </form>
     </section>
     <section class="top-article grid-center-bottom">
-      <div class="top-article" style="background-image: url(/images/default-placeholder.png)">
+      <div class="top-article" style="background-image: url(http://lorempixel.com/400/200)">
         <!-- insert background image for div -->
       </div>
       <div class="linkdiv">
-        {% for topnews in page.topnews %}
-        <a class="link" href="#{{topnews.link}}"><h1>{{topnews.title}}</h1></a>
-        {% endfor %}
+        <a class="link" href="#{{topnews.link}}"><h1>top news title</h1></a>
       </div>
     </section>
     <section class="news">
       <div class="sectionrow grid">
         <div class="article col-4">
-          {% for latestnews in page.latestnews %}
           <div class="pictureNews">
           </div>
           <div class="">
-            <a class="titlearticle" href="{{latestnews.link}}"><h2>{{latestnews.title}}</h2></a>
+            <a class="titlearticle" href="#"><h2>title article</h2></a>
           </div>
           <div class="description"> <!-- this is the invisible text -->
-              <h3 class="centered">{{latestnews.article}}</h3>
-              <p>({{latestnews.description}})<a class="readmore" href="#{{latestnews.link}}"><b>read more</b></a></p>
+              <h3 class="centered">title article</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<a class="readmore" href="#"><b>read more</b></a></p>
           </div>
-          {% endfor %}
         </div>
         <div class="article col-4">
           <div class="pictureNews">

@@ -2,7 +2,7 @@
 layout: default
 ---
 {% for country in site.countries %}
-  <a href="#">
+  <a href="{{ country.url }}">
     {{ country.title }} - {{ country.date }}
   </a>
 {% endfor %}
