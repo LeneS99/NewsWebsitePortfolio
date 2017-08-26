@@ -7,11 +7,15 @@ layout: default
   <div class="shortdescription">
       <b><p>{{page.description}}</p></b>
   </div>
+    {% for image in page.image%}
+      <div class="image-gallery" style="background-image: url(/images/countries/{{ gallery.image }})"></div>
+    {% endfor %}
+  </div>
   <div class="country">
-    <p>{{article.country}}</p>
+    <p>{{page.country}}</p>
   </div>
   <div class="topic">
-    <p>{{article.topic}}</p>
+    <p>{{page.topic}}</p>
   </div>
   <div class="relatedarticles">
     <div class="sectionrow grid">
