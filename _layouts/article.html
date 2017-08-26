@@ -2,16 +2,22 @@
 layout: default
 ---
 
-<section>
-  <h1>title article</h1>
+<section class="normalarticle">
+  <h1 class="articletitle centered">{{page.title}}</h1>
   <div class="shortdescription">
-      <b><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></b>
+      <b><p>{{page.description}}</p></b>
   </div>
-  <div class="article-img">
+  <div class="articleimg" style="background-image: url">
     <!-- a backgroundimage for the div -->
   </div>
   <div class="articletext">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>{{article.text}}</p>
+  </div>
+  <div class="country">
+    <p>{{article.country}}</p>
+  </div>
+  <div class="topic">
+    <p>{{article.topic}}</p>
   </div>
   <div class="relatedarticles">
     <div class="sectionrow grid">

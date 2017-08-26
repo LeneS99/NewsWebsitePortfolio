@@ -48,6 +48,7 @@ img{
 body{ /* font aussuchen und hier eintragen, link in html eintragen (head)*/
   font-family: 'Lato', sans-serif;
   color: black;
+  background-color: papayawhip;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -63,9 +64,10 @@ text-decoration: none;
 color: black;
 }
 
-section{
-  width: 100%;
+section, header, footer{
+  width: 80%;
   margin: 0 auto; /*0 auto für mittig*/
+  background-color: white;
 }
 
 /* ---- HEADER SECTION STYLES ----------------------------- */
@@ -99,7 +101,7 @@ div.top-article{
 }
 
 section.top-article{
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   margin-top: 3%;
   margin-bottom: 10%;
@@ -156,6 +158,22 @@ section.top-article{
   margin-bottom: 10%;
 }
 
+/* ---- ARTICLE SECTION LAYOUT ---------------------------- */
+.articletitle{
+  padding-top: 3%;
+}
+
+.articletext, .shortdescription{
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.articletext{
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+
+
 /* ---- FOOTER SECTION STYLES ----------------------------- */
 .footerrow.grid{
   margin-top: 10%;
@@ -164,4 +182,103 @@ section.top-article{
 .subscribe.col-4{
   border-left: 3px solid black;
   border-right: 3px solid black;
+}
+
+
+/* ---- BURGER MENU ----------------------------------------- */
+
+.burger-button {
+  position:fixed;
+  top: 2vh;
+  right: 2vh;
+  z-index: 9999999999;
+  padding: 8px;
+}
+/*this is where you can chand the color of the buttons*/
+.burger-button span{
+  width: 25px;
+  border: 2px solid black;
+  background-color: black;
+  display: block;
+  border-radius: 22px;
+  transition: 2s;
+}
+
+.burger-top, .burger-bottom{
+  position: absolute;
+}
+
+.burger-top{
+  top: 02px;
+}
+
+.burger-bottom{
+  bottom: 02px;
+}
+/* make sure this has the same top as the burger button has padding*/
+.burger-button.active .burger-top{
+  position: absolute;
+  top: 8px;
+  transform: rotateZ(45deg);
+}
+
+.burger-button.active .burger-middle{
+  transform: rotateZ(270deg);
+  border-color: rgba(0,0,0,0);
+  background-color:rgba(0,0,0,0);
+}
+
+/* make sure this has the same bottom as the burger button has padding*/
+
+.burger-button.active .burger-bottom{
+  position: absolute;
+  bottom: 8px;
+  transform: rotateZ(-45deg);
+}
+
+
+.burger-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: #f9f9f9;
+    padding:5px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    z-index: 99999999;
+}
+
+.burger-menu a {
+  text-decoration: none;
+  padding: 15px 11px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #C3BFBC;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  display:block;
+  padding:5px 15px;
+  text-align:center;
+  white-space:nowrap;
+}
+
+.burger-menu li{list-style:none}
+/*
+.dropdown-nav:hover .dropdown-content {
+    display: block;
+} */
+
+.mob-show{
+  display: none;
+}
+
+@media all and (max-width: 465px) {
+  .mob-show{
+    display: block;
+  }
+
+  .mob-hide{
+    display: none;
+  }
 }
