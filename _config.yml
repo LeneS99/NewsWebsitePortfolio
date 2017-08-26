@@ -1,6 +1,6 @@
 collections:
   articles:
-    output: false
+    output: true
   countries:
     output: true
   topics:

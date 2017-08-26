@@ -24,6 +24,14 @@ Website Colours: List colour hex codes here for reference
   border: 1px solid red;
 }
 
+[class*=col-], [class*=col_], [class~=col] {
+  padding: 0;
+}
+
+[class*=grid-], [class*=grid_], [class~=grid] {
+  margin: 0;
+}
+
 img{
   max-width: 100%;
   height: auto;
