@@ -78,6 +78,16 @@ section, header, footer{
   background-color: white;
 }
 
+/* --- MODULAR STYLES ----*/
+
+.bg-img{
+  background-position: center;
+  background-size: cover;
+}
+
+.gallery-section .bg-img{
+  height: 300px;
+}
 
 /* RESPONSIVE VIDEOS */
 .embed-container {
@@ -225,6 +235,10 @@ section.news{
 /* ---- FOOTER SECTION STYLES ----------------------------- */
 .footerrow.grid{
   margin-top: 10%;
+}
+
+#footerbutton{
+  margin-top: 2%;
 }
 
 /* ---- BURGER MENU --------------------------------------- */

@@ -2,11 +2,26 @@
 layout: default
 ---
 
-<section class="normalarticle">
+<section class="banner-section normalarticle">
   <h1 class="articletitle centered">{{page.title}}</h1>
   <div class="shortdescription">
       <b><p>{{page.description}}</p></b>
   </div>
+</section>
+<section class="gallery-section">
+  <div class="grid">
+    {% for photo in page.images %}
+      <div class="col-4">
+        <div class="bg-img" style="background-image: url({{photo.path}})"></div>
+        <p>
+          {{photo.caption}}
+        </p>
+      </div>
+    {% endfor %}
+  </div>
+
+</section>
+<section class="ps-section">
   <div class="country">
     <a href="/countries/{{page.country}}"><p><img src="/images/countries/{{page.flag}}" alt="flag"></p></a>
   </div>
