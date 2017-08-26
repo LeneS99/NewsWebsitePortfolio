@@ -96,6 +96,9 @@ section, header, footer{
   }
 
 /* ---- HEADER SECTION STYLES ----------------------------- */
+header{
+  padding-bottom: 5%;
+}
 
 .navrow a{
   padding: 1vh 1vh;
@@ -170,8 +173,7 @@ section.news{
   padding-right: 5%;
   padding-left: 5%;
   background-color: white;
-  margin-left: 25%;
-  margin-top: -10%;
+  margin-left: 11%;
 }
 
 .description{
@@ -215,17 +217,15 @@ section.news{
   background-position: center;
 }
 
+/* ---- TOPICS PAGE STYLES -------------------------------- */
+.toopics-header.centered{
+  padding-bottom: 3%;
+}
 
 /* ---- FOOTER SECTION STYLES ----------------------------- */
 .footerrow.grid{
   margin-top: 10%;
 }
-
-.subscribe.col-4{
-  border-left: 3px solid black;
-  border-right: 3px solid black;
-}
-
 
 /* ---- BURGER MENU --------------------------------------- */
 
