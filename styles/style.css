@@ -21,7 +21,7 @@ Website Colours: List colour hex codes here for reference
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 [class*=col-], [class*=col_], [class~=col] {
@@ -73,7 +73,8 @@ section, header, footer{
 }
 
 aside{
-  background-color: black;
+  /*background-color: black;*/
+  border-left: 1px solid rgba(33, 29, 29, 0.19);
 }
 
 img{
@@ -145,17 +146,29 @@ img{
 
 /* ---- HEADER SECTION STYLES ----------------------------- */
 header{
-  padding-bottom: 5%;
+  padding-bottom: 2rem;
 }
 
-.navrow a{
-  padding: 1vh 1vh;
-  margin-left: 5%;
-  margin-right: 5%;
+header nav{
+  background-color: #dcdcdc;
+  border-top: 1px solid #8e8e8e;
+  border-bottom: 1px solid #8e8e8e;
+}
+
+header nav a{
+  padding: 1rem 2rem;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 22px;
 }
 
 nav a:hover{
   border-bottom: 3px black solid;
+}
+
+header .logo{
+  max-width: 300px;
+  padding: 1rem;
 }
 
 /* ---- MAIN ARTICLE SECTION STYLES ----------------------- */
@@ -212,6 +225,18 @@ section.top-article{
   margin-bottom: 10%;
 }
 
+/* ---- INDEX SIDEBAR ---------------------------- */
+
+.country-banner{
+  background-position: center;
+  background-size: cover;
+  height: 180px;
+}
+
+.country-banner-block{
+  padding: 5px 10px;
+}
+
 /* ---- ARTICLE SECTION LAYOUT ---------------------------- */
 
 .article-text-section, .title-section, .article-image-section{
@@ -222,9 +247,29 @@ section.top-article{
 
 /* ---- TOPICS PAGE STYLES -------------------------------- */
 
+.topic-info-section{
+  padding: 1rem;
+}
+
+.topic-latest-news{
+  padding-bottom: 2rem;
+}
+
 /* ---- COUNTRY PAGE STYLES ------------------------------ */
 
+.country-info-section{
+  padding-bottom: 2rem;
+}
 
+.country-info-description{
+  padding: 1rem;
+}
+
+.topic-latest-news h2{
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(33, 29, 29, 0.19);
+}
 
 /* ---- FOOTER SECTION STYLES ----------------------------- */
 .footerrow.grid{

@@ -18,10 +18,20 @@ layout: default
 <div class="grid">
   <section class="article-list col-9">
     <div class="">
-      {% for article in site.articles limit:6 %}
+      {% for article in site.articles limit:20 %}
         {% include article-preview.html %}
       {% endfor %}
     </div>
   </section>
-  <aside class="col-3"></aside>
+  <aside class="col-3">
+      {% for country in site.countries %}
+      <div class="country-banner-block">
+        <a href="{{country.url}}">
+          <div class="country-banner grid-middle-center" style="background-image: url(/images/countries/{{country.outline-image}})">
+            <h3>{{country.name}}</h3>
+          </div>
+        </a>
+      </div>
+      {% endfor %}
+  </aside>
 </div>

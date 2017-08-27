@@ -6,7 +6,7 @@ layout: default
 </section>
 <section class="topic-info-section">
   <div class="grid">
-    <div class="col-8">
+    <div class="col-12">
       <p>{{ page.description }}</p>
     </div>
   </div>
@@ -17,10 +17,8 @@ layout: default
     <section class="topic-latest-news">
       <h2>{{country.name}}</h2>
       {% assign tc_articles = topic_articles | where: "country", country.name %}
-      <div class="grid">
       {% for article in tc_articles limit:3 %}
         {% include article-preview.html %}
       {% endfor %}
-      </div>
     </section>
   {% endfor %}
