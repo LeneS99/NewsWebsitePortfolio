@@ -233,6 +233,10 @@ section.top-article{
   height: 180px;
 }
 
+.country-banner h3{
+  color: rgb(156, 156, 156);
+}
+
 .country-banner-block{
   padding: 5px 10px;
 }
@@ -241,6 +245,11 @@ section.top-article{
 
 .article-text-section, .title-section, .article-image-section{
   padding: 1rem;
+}
+
+.country-topic-description{
+  padding-bottom: 2rem;
+  padding-right: 36rem;
 }
 
 /* ---- COUNTRIES PAGE STYLES ----------------------------- */

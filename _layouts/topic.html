@@ -15,7 +15,7 @@ layout: default
   {% assign topic_articles = site.articles | where: "topic", page.name %}
   {% for country in site.countries %}
     <section class="topic-latest-news">
-      <h2>{{country.name}}</h2>
+      <a href="{{country.url}}"><h2>{{country.name}}</h2></a>
       {% assign tc_articles = topic_articles | where: "country", country.name %}
       {% for article in tc_articles limit:3 %}
         {% include article-preview.html %}
