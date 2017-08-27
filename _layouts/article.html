@@ -2,23 +2,32 @@
 layout: default
 ---
 
-<section class="normalarticle">
-  <h1 class="articletitle centered">{{page.title}}</h1>
+<section class="title-section">
+  <h1>{{page.title}}</h1>
   <div class="shortdescription">
       <b><p>{{page.description}}</p></b>
   </div>
+</section>
+<section class="article-image-section">
   <div class="articleimg" style="background-image: url">
     <!-- a backgroundimage for the div -->
   </div>
-  <div class="articletext">
-    <p>{{page.text}}</p>
-  </div>
-  <div class="country">
+</section>
+<div class="grid">
+  <section class="article-text-section col-9">
+      <p>{{page.text}}</p>
+  </section>
+  <aside class="col-3">
+  </aside>
+</div>
+<div class="grid">
+  <div class="country col-2 centered">
     <a href="/countries/{{page.country}}"><p><img src="/images/countries/{{page.flag}}" alt="flag"></p></a>
   </div>
-  <div class="topic">
+  <div class="topic col-2 centered">
     <a href="/topics/{{page.topic}}"><p>{{page.topic}}</p></a>
   </div>
+</div>
   <div class="relatedarticles">
     <div class="sectionrow grid">
       {% for article in site.articles limit:3 %}

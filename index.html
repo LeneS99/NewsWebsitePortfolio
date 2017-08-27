@@ -1,30 +1,27 @@
 ---
 layout: default
 ---
-<section class="subscribe">
-  <form class="grid-middle" method="POST" action="http://formspree.io/lene_schargitz@outlook.de">
-    <div class="col-6 centered">
-      <input class="email-signup centered" type="name" name="name" placeholder="Your name">
+<section class="headline-section">
+  <a class="link white-bg" href="{{site.articles.last.url}}">
+    <div class="grid-bottom banner-image" style="background-image: url(http://lorempixel.com/400/200)">
+      <div class="banner-overlay col-12">
+        <h1>{{site.articles.last.title}}</h1>
+        <p> <i class="fa fa-flag" aria-hidden="true"></i>
+           {{site.articles.last.country}} <i class="fa fa-rss" aria-hidden="true"></i>
+           {{site.articles.last.topic}} <i class="fa fa-bolt" aria-hidden="true"></i>
+           {{site.articles.last.layout}}</p>
+
+      </div>
     </div>
-    <div class="col-6 centered">
-      <input class="email-signup centered" type="email" name="email" placeholder="Your email">
-    </div>
-    <div class="col-12 centered">
-      <button type="submit">Submit</button>
-    </div>
-  </form>
+  </a>
 </section>
-<section class="top-article grid-center-bottom">
-  <div class="top-article" style="background-image: url(http://lorempixel.com/400/200)">
-  </div>
-  <div class="linkdiv centered">
-    <a class="link white-bg" href="#"><h1>top news title</h1></a>
-  </div>
-</section>
-<section class="news">
-  <div class="sectionrow grid">
-    {% for article in site.articles limit:6 %}
-      {% include article-preview.html %}
-    {% endfor %}
+<div class="grid">
+  <section class="article-list col-9">
+    <div class="">
+      {% for article in site.articles limit:6 %}
+        {% include article-preview.html %}
+      {% endfor %}
     </div>
-</section>
+  </section>
+  <aside class="col-3"></aside>
+</div>

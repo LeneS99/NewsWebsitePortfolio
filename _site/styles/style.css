@@ -32,6 +32,50 @@ Website Colours: List colour hex codes here for reference
   margin: 0;
 }
 
+/* ---- UNIVERSAL STYLES ---------------------------------- */
+body{ /* font aussuchen und hier eintragen, link in html eintragen (head)*/
+  font-family: 'Quattrocento', serif;
+  color: #272838;
+  background-color: #fcfcfc;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Quattrocento', serif;
+
+}
+
+h1{
+  font-size: 2.5rem;
+}
+
+h2{
+  font-size: 2rem;
+}
+
+h3{
+  font-size: 1.8rem;
+}
+
+p{
+  font-size: 22px;
+  line-height: 1.8;
+  color: #222222;
+
+}
+
+a{
+text-decoration: none;
+color: #272838;
+}
+
+section, header, footer{
+  background-color: #fcfcfc;
+}
+
+aside{
+  background-color: black;
+}
+
 img{
   max-width: 100%;
   height: auto;
@@ -52,44 +96,38 @@ img{
 .darkgrey-bg { background-color: rgb(60,60,60); }
 .feat-bg     { background-color: ; }
 
-/* ---- UNIVERSAL STYLES ---------------------------------- */
-body{ /* font aussuchen und hier eintragen, link in html eintragen (head)*/
-  font-family: 'Lato', sans-serif;
-  color: black;
-  background-color: papayawhip;
-}
-
-h1, h2, h3, h4, h5, h6{
-  font-family:
-}
-
-p{
-
-}
-
-a{
-text-decoration: none;
-color: black;
-}
-
-section, header, footer{
-  width: 80%;
-  margin: 0 auto; /*0 auto für mittig*/
-  background-color: white;
-}
 
 /* --- MODULAR STYLES ----*/
 
-.bg-img{
-  background-position: center;
+.headline-section{
+  margin-bottom: 2rem;
+}
+
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.banner-image{
+  height: 30vw;
   background-size: cover;
+  background-position: center;
 }
 
-.gallery-section .bg-img{
-  height: 300px;
+.banner-overlay{
+  background-color: rgba(0,0,0,0.58);
+  color: white;
+  padding: 1rem;
 }
 
-/* RESPONSIVE VIDEOS */
+.banner-overlay p{
+  margin-top: 0.5rem;
+  color: #bfbfbf
+}
+
+.arti
+
+/* ---- RESPONSIVE VIDEOS ---------------------------------- */
 .embed-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -120,70 +158,43 @@ nav a:hover{
   border-bottom: 3px black solid;
 }
 
-/* ---- SUBSCRIBE SECTION STYLES -------------------------- */
-section.subscribe{
-  padding-top: 3%;
-  padding-bottom: 3%;
-}
-
-input.email-signup, button{
-  display: block;
-  margin: 0 auto;
-  width: 50%;
-  height: 5vh;
-}
- div.col-12.centered{
-   margin-top: 3%;
- }
-
 /* ---- MAIN ARTICLE SECTION STYLES ----------------------- */
-div.top-article{
-  height: 30vw;
-  background-size: cover;
-  background-position: center;
-}
+
 
 section.top-article{
-  width: 80%;
-  margin: 0 auto;
   display: block;
 }
 
 .link{
-  display:inline-block;
-  padding: 1% 19%;
-  border: 2px solid black;
+
 }
 
-.linkdiv.centered{
-  margin-top: -2%;
-}
 /* ---- TOP NEWS SECTION STYLES --------------------------- */
-section.news{
-  padding-top: 10%;
-}
 
 .sectionrow.grid{
   width: 90%;
   margin: 0 auto;
 }
 
-.pictureNews{
-  background-image: url('../images/default-placeholder.png');
-  background-size: cover;
-  background-position: center;
-  min-height: 40vh;
-  width: auto;
+.article-preview{
+  display: block;
+  padding: 0.25rem;
+  border-bottom: 1px dotted #c7c7c7;
+  margin-bottom: 1rem;
 }
 
-.titlearticle{
-  display: inline-block;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  padding-right: 5%;
-  padding-left: 5%;
-  background-color: white;
-  margin-left: 11%;
+.article-preview .article-info{
+  background-color: #dcdcdc;
+  color: #8e8e8e;
+  padding: 0 2px;
+}
+
+.article-preview .article-info p{
+  font-size: 14px;
+}
+
+.article-preview h2{
+  margin-bottom: 0.5rem;
 }
 
 .description{
@@ -202,35 +213,18 @@ section.news{
 }
 
 /* ---- ARTICLE SECTION LAYOUT ---------------------------- */
-.articletitle{
-  padding-top: 3%;
-}
 
-.articletext, .shortdescription{
-  max-width: 90%;
-  margin: 0 auto;
-}
-
-.articletext{
-  padding-top: 3%;
-  padding-bottom: 5%;
+.article-text-section, .title-section, .article-image-section{
+  padding: 1rem;
 }
 
 /* ---- COUNTRIES PAGE STYLES ----------------------------- */
-.countries-page-headline{
-  padding-top: 3%;
-  padding-bottom: 3%;
-}
-
-.col-3.country-preview-outline{
-  background-size: cover;
-  background-position: center;
-}
 
 /* ---- TOPICS PAGE STYLES -------------------------------- */
-.toopics-header.centered{
-  padding-bottom: 3%;
-}
+
+/* ---- COUNTRY PAGE STYLES ------------------------------ */
+
+
 
 /* ---- FOOTER SECTION STYLES ----------------------------- */
 .footerrow.grid{

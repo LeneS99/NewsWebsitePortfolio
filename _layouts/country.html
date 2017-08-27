@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<section class="banner-section" style="background-image: url(/images/countries/{{ page.banner-image }})">
+<section class="title-section">
   <h1>{{ page.name }}</h1>
 </section>
 <section class="country-info-section">
@@ -19,10 +19,8 @@ layout: default
   <section class="topic-latest-news">
     <h2>{{topic.name}}</h2>
     {% assign ct_articles = country_articles | where: "topic", topic.name %}
-    <div class="grid">
     {% for article in ct_articles limit:3 %}
       {% include article-preview.html %}
     {% endfor %}
-    </div>
   </section>
 {% endfor %}
