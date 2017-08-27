@@ -28,10 +28,12 @@ layout: default
     <a href="/topics/{{page.topic}}"><p>{{page.topic}}</p></a>
   </div>
 </div>
-  <div class="relatedarticles">
-    <div class="sectionrow grid">
-      {% for article in site.articles limit:3 %}
-        {% include article-preview.html %}
-      {% endfor %}
+<div class="relatedarticles">
+  <div class="grid">
+    {% for article in site.articles limit:3 %}
+    <div class="col-4">
+      {% include article-preview.html %}
     </div>
+    {% endfor %}
+  </div>
 </section>

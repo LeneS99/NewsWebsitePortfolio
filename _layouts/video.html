@@ -7,47 +7,20 @@ layout: default
       <b><p>{{page.description}}</p></b>
   </div>
   <div class="embed-container"><iframe src='{{page.video}}' frameborder='0' allowfullscreen></iframe></div>
-  <div class="country">
-    <a href="/countries/{{page.country}}"><p><img src="/images/countries/{{page.flag}}" alt="flag"></p></a>
-  </div
-  <div class="topic">
-    <a href="/topics/{{page.topic}}"><p>{{page.topic}}</p></a>
-  </div>
-  <div class="relatedarticles">
-    <div class="sectionrow grid">
-      <div class="article col-4">
-        <div class="pictureNews">
-        </div>
-        <div class="">
-          <a class="titlearticle" href="#"><h2>TITLE ARTICLE</h2></a>
-        </div>
-        <div class="description"> <!-- this is the invisible text -->
-            <h3 class="centered">title article</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a class="readmore" href=""><b>read more</b></a> <!-- insert link to article --></p>
-        </div>
-      </div>
-      <div class="article col-4">
-        <div class="pictureNews">
-        </div>
-        <div class="">
-          <a class="titlearticle" href="#"><h2>TITLE ARTICLE</h2></a>
-        </div>
-        <div class="description"> <!-- this is the invisible text -->
-            <h3 class="centered">title article</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a class="readmore" href=""><b>read more</b></a> <!-- insert link to article --></p>
-        </div>
-      </div>
-      <div class="article col-4">
-        <div class="pictureNews">
-        </div>
-        <div class="">
-          <a class="titlearticle" href="#"><h2>TITLE ARTICLE</h2></a>
-        </div>
-        <div class="description"> <!-- this is the invisible text -->
-            <h3 class="centered">title article</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a class="readmore" href=""><b>read more</b></a> <!-- insert link to article --></p>
-        </div>
-      </div>
+  <div class="grid country-topic-description">
+    <div class="country col-2 centered">
+      <a href="/countries/{{page.country}}"><p><img src="/images/countries/{{page.flag}}" alt="flag"></p></a>
+    </div>
+    <div class="topic col-2 centered">
+      <a href="/topics/{{page.topic}}"><p>{{page.topic}}</p></a>
     </div>
   </div>
+  <div class="relatedarticles">
+    <div class="grid">
+      {% for article in site.articles limit:3 %}
+      <div class="col-4">
+        {% include article-preview.html %}
+      </div>
+      {% endfor %}
+    </div>
 </section>
