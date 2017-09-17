@@ -1,7 +1,0 @@
-collections:
-  articles:
-    output: true
-  countries:
-    output: true
-  topics:
-    output: true

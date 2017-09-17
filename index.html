@@ -1,37 +1,131 @@
----
-layout: default
----
-<section class="headline-section">
-  <a class="link white-bg" href="{{site.articles.last.url}}">
-    <div class="grid-bottom banner-image" style="background-image: url(http://lorempixel.com/400/200)">
-      <div class="banner-overlay col-12">
-        <h1>{{site.articles.last.title}}</h1>
-        <p> <i class="fa fa-flag" aria-hidden="true"></i>
-           {{site.articles.last.country}} <i class="fa fa-rss" aria-hidden="true"></i>
-           {{site.articles.last.topic}} <i class="fa fa-bolt" aria-hidden="true"></i>
-           {{site.articles.last.layout}}</p>
+<!DOCTYPE HTML>
+<html>
 
-      </div>
-    </div>
-  </a>
+    <head>
+  <meta charset="utf-8">
+  <title>Parteien im Vergleich</title> <!-- put title in here ----->
+  <script src="https://use.fontawesome.com/5911f91835.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.4.0/gridlex.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Titillium+Web" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+
+  <body class="homepage">
+
+    <div class="container">
+      <section class="main">
+    <nav id="home-navigation" class="nav-bar centered">
+    <a href="#parteien" class="slide-section">Die Parteien</a>
+    <a href="/comparison.html" class="slide-section">Im Vergleich</a>
+  </nav>
+
 </section>
-<div class="grid">
-  <section class="article-list col-9">
-    <div class="">
-      {% for article in site.articles limit:20 %}
-        {% include article-preview.html %}
-      {% endfor %}
+<section id="parteien" class="text-section">
+  <div class="grid sectionrow">
+
+    
+        <div class="grid-bottom banner-image box" style="background-image: url(images/afd/afd-programm-deckblatt.jpg)">
+          <a href="/parties/afd.html">
+            <div class="partei-logo">
+              <img class="partei-logo" src="images/afd/afd-logo-quadrat.jpg" alt="Partei Logo">
+            </div>
+            <div class="banner-overlay col-12">
+              <p class="centered">Alice Weidel & Alexander Gauland</p>
+            </div>
+          </a>
+        </div>
+    
+        <div class="grid-bottom banner-image box" style="background-image: url(images/cdu/cdu-programm-deckblatt.jpg)">
+          <a href="/parties/cdu.html">
+            <div class="partei-logo">
+              <img class="partei-logo" src="images/cdu/cdu-logo-quadrat.jpg" alt="Partei Logo">
+            </div>
+            <div class="banner-overlay col-12">
+              <p class="centered">Angela Merkel</p>
+            </div>
+          </a>
+        </div>
+    
+        <div class="grid-bottom banner-image box" style="background-image: url(images/gruenen/gruene-programm-deckblatt.jpg)">
+          <a href="/parties/die-gruenen.html">
+            <div class="partei-logo">
+              <img class="partei-logo" src="images/gruenen/gruenen-logo-quadrat.jpg" alt="Partei Logo">
+            </div>
+            <div class="banner-overlay col-12">
+              <p class="centered">Katrin Göring-Eckardt & Cem Özdemir</p>
+            </div>
+          </a>
+        </div>
+    
+
+    
+        <div class="grid-bottom banner-image box space-rows" style="background-image: url(images/linke/linke-programm-deckblatt.jpg);">
+          <a href="/parties/die-linke.html">
+            <div class="partei-logo">
+              <img class="partei-logo" src="images/linke/linke-logo-quadrat.jpg" alt="Partei Logo">
+            </div>
+            <div class="banner-overlay col-12">
+              <p class="centered">Dietmar Bartsch & Sahra Wagenknecht</p>
+            </div>
+          </a>
+        </div>
+    
+        <div class="grid-bottom banner-image box space-rows" style="background-image: url(images/fdp/fdp-programm-deckblatt.jpg);">
+          <a href="/parties/fdp.html">
+            <div class="partei-logo">
+              <img class="partei-logo" src="images/fdp/fdp-logo-quadrat.jpg" alt="Partei Logo">
+            </div>
+            <div class="banner-overlay col-12">
+              <p class="centered">Christian Lindner</p>
+            </div>
+          </a>
+        </div>
+    
+        <div class="grid-bottom banner-image box space-rows" style="background-image: url(images/spd/spd-programm-deckblatt.jpg);">
+          <a href="/parties/spd.html">
+            <div class="partei-logo">
+              <img class="partei-logo" src="images/spd/spd_logo_jpg-data.jpg" alt="Partei Logo">
+            </div>
+            <div class="banner-overlay col-12">
+              <p class="centered">Martin Schulz</p>
+            </div>
+          </a>
+        </div>
+    
+
+  </div>
+</section>
+
     </div>
-  </section>
-  <aside class="col-3">
-      {% for country in site.countries %}
-      <div class="country-banner-block">
-        <a href="{{country.url}}">
-          <div class="country-banner grid-middle-center" style="background-image: url(/images/countries/{{country.outline-image}})">
-            <h3>{{country.name}}</h3>
-          </div>
-        </a>
-      </div>
-      {% endfor %}
-  </aside>
-</div>
+    <footer>
+  <div class="footerrow grid-spaceBetween">
+    <div class="col-2">
+      <h4 class="footer-heading">Parteien</h6>
+      <a class="sitemap" href="/parties/afd.html">AfD</a>
+      <a class="sitemap" href="/parties/cdu.html">CDU</a>
+      <a class="sitemap" href="/parties/die-gruenen.html">Die Grünen</a>
+      <a class="sitemap" href="/parties/die-linke.html">Die Linke</a>
+      <a class="sitemap" href="/parties/fdp.html">FDP</a>
+      <a class="sitemap" href="/parties/spd.html">SPD</a>
+    </div>
+    <div class="col-3">
+      <h4 class="footer-heading">Impressum & CO</h6>
+      <a class="sitemap" href="#">Impressum</a>
+      <a class="sitemap" href="#">Quellenangaben</a>
+    </div>
+  </div>
+  <div class="copy-info centered">
+    <h4>&copy 2017</h4>
+  </div>
+</footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script src="/js/script.js" type="text/javascript">
+    </script>
+
+  </body>
+
+</html>
